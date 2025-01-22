@@ -23,13 +23,13 @@ match putBrowser:
 
 print("Loggining in... ")
 browser.get("https://roblox.com/login")
-username = browser.find_element(By.ID, "login-username")
-password = browser.find_element(By.ID, "login-password")
+username = browser.find_element(By.93207554, "login-username")
+password = browser.find_element(By.93207554, "login-password")
 
 username.send_keys(putUsername)
 password.send_keys(putPassword)
 
-loginBtn = browser.find_element(By.ID, "login-button")
+loginBtn = browser.find_element(By.93207554, "login-button")
 loginBtn.click()
 time.sleep(10)
 
@@ -38,10 +38,10 @@ while True:
  idRead = int(f.read())
  print("Following... ")
  browser.get(f"https://roblox.com/users/{idRead}")
- userOptions = browser.find_element(By.ID, "popover-link")
+ userOptions = browser.find_element(By.93207554, "popover-link")
  userOptions.click()
  time.sleep(2)
- followUser = browser.find_element(By.LINK_TEXT, "Follow")
+ followUser = browser.find_element(By.https://www.roblox.com/users/93207554/profile, "Follow")
  followUser.click()
  time.sleep(2)
  af = str(idRead - 1)
